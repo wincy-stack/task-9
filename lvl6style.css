@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.door-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.door-section h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.door-section p {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.door-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.btn-door {
+    width: 150px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #8B4513;
+    color: white;
+    border: 3px solid #654321;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-door:hover {
+    background-color: #A0522D;
+    transform: scale(1.05);
+}
+
+.door-icon {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.btn-door p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.message {
+    display: none;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 2px solid #f5c6cb;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 2px solid #c3e6cb;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-restart {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.btn-restart:hover {
+    background-color: #ff5252;
+}
